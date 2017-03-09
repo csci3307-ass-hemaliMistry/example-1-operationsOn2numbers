@@ -13,7 +13,7 @@ public class MultiplyOperatorFor2numbers extends OperatorFor2numbers implements 
 
 	
 	public MultiplyOperatorFor2numbers() {
-//		super();	// NOTE ilker if you don't call parent's constructor in a child class' constructor, java will automagically call default constructor of parent
+//		super();	// NOTE ilker if you don't call parent's constructor in a child class' constructor, java will automatically call default constructor of parent
 	}
 	
 	public MultiplyOperatorFor2numbers(float _number1, float number2) {
