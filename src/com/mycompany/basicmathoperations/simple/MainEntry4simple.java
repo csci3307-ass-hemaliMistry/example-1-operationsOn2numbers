@@ -22,7 +22,7 @@ public class MainEntry4simple {
 		// get inputs
 		Scanner scanner = new Scanner(System.in);
 		int number1, number2;
-		float result;
+		float result, result2, result3, result4;
 		// read number 1 and number 2 inputs
 		System.out.println("Enter number 1");
 		number1 = scanner.nextInt();
@@ -33,8 +33,20 @@ public class MainEntry4simple {
 		Multiply multiplier = new Multiply();
 		result = multiplier.multiply(number1, number2);
 		
+		Divide divider = new Divide(); 
+		result2 = divider.divide(number1, number2);
+		
+		Add adding = new Add();
+		result3 = adding.add(number1,  number2);
+		
+		Subtract sub = new Subtract();
+		result4 = sub.subtract(number1, number2);
+		
 		// print out result - NOTE %d is for int, %f is for float(and double), %.2f means 2 digits after decimal like 123.45
-		System.out.printf("result is %.2f%n", result);
+		System.out.printf("result when multiplied is %.2f%n", result);
+		System.out.printf("divided is %.2f%n" , result2);
+		System.out.printf("added is %.2f%n" , result3);
+		System.out.printf("subtracted is %.2f%n" , result4);
 		scanner.close();
 	}
 

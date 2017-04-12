@@ -42,6 +42,17 @@ public class MainEntry4oop {
 		result = divider.divide2numbers();
 		System.out.printf("result of divide(float, float) is %.2f%n", result);
 		
+		Add adding = new AddOperatorFor2numbers(number1, number2);
+		result = adding.add(number1, number2);
+		System.out.printf("result of add(float, float) is %.2f%n", result);
+		result = adding.add2numbers();
+		System.out.printf("result of divide(float, float) is %.2f%n", result);
+		
+		Subtract sub = new SubtractOperatorFor2numbers(number1, number2);
+		result = sub.subtract(number1, number2);
+		System.out.printf("result of add(float, float) is %.2f%n", result);
+		result = sub.subtract2numbers();
+		System.out.printf("result of divide(float, float) is %.2f%n", result);
 		
 		
 		// print out result - NOTE %d is for int, %f is for float(and double), %.2f means 2 digits after decimal like 123.45
